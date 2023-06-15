@@ -1,4 +1,63 @@
 
+/* Navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Logo style */
+.logo a {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Menu list style */
+.menu-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Burger style */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 5px;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .menu-list {
+      display: none;
+  }
+  .burger {
+      display: block;
+  }
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+JS
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f1de;
